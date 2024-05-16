@@ -1,0 +1,42 @@
+div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 12px 8px !important;
+  height: 20px !important;
+}
+
+label, span, select, input {
+  font-family: monospace;
+  font-size: 11pt;
+  color: #333;
+}
+
+span {
+  min-width: 5ch;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 5px;
+  background: #b4c3be;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 2px;
+  width: 5px;
+  height: 15px;
+  background: #565a5b;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  border-radius: 2px;
+  width: 5px;
+  height: 15px;
+  background: #565a5b;
+  cursor: pointer;
+}

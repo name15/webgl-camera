@@ -1,0 +1,36 @@
+.fields {
+  transform-origin: top;
+
+  --fieldcount: 0; /* Will be changed by javascript */
+  max-height: calc(var(--fieldcount) * 20px + (var(--fieldcount) + 1) * 12px);
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+.hide > .fields {
+  max-height: 0;
+}
+
+.hide > .toggle {
+  transform: rotateZ(180deg);
+}
+
+legend {
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 14pt;
+  margin-top: 8px;
+  border-bottom: 1px solid black;
+}
+
+.toggle {
+  position: relative;
+  float: right;
+  top: -1rem;
+  right: 1rem;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid black;
+}
